@@ -1,0 +1,63 @@
+@import "sizes";
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	gap: $size-18;
+	flex-shrink: 0;
+
+	&.left {
+		justify-content: flex-start;
+	}
+
+	&.center {
+		justify-content: center;
+	}
+
+	&.right {
+		justify-content: flex-end;
+	}
+
+	&.top {
+		align-items: flex-start;
+	}
+
+	&.middle {
+		align-items: center;
+	}
+
+	&.bottom {
+		align-items: flex-end;
+	}
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex-shrink: 0;
+
+	&.left {
+		align-items: flex-start;
+	}
+
+	&.center {
+		align-items: center;
+	}
+
+	&.right {
+		align-items: flex-end;
+	}
+
+	&.top {
+		justify-content: flex-start;
+	}
+
+	&.middle {
+		justify-content: center;
+	}
+
+	&.bottom {
+		justify-content: flex-end;
+	}
+}
